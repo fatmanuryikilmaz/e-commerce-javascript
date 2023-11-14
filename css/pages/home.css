@@ -71,10 +71,46 @@
 }
 /*! brands end */
 
+/*! policy start */
+.policy {
+  border: 1px solid #dee0ea;
+  margin-top: 40px;
+}
+.policy-list {
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.policy-item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.policy-item i {
+  display: flex;
+  font-size: 50px;
+}
+.policy-list .policy-item .policy-texts {
+  display: flex;
+  flex-direction: column;
+}
+.policy-list .policy-item .policy-texts strong {
+  font-weight: 600;
+}
+.policy-list .policy-item .policy-texts span {
+  font-size: 12px;
+}
+/*! policy end */
+
 /* responsive*/
 @media (max-width: 768px) {
   .blogs .blog-list {
     grid-template-columns: 1fr;
+  }
+  .policy-list {
+    flex-direction: column;
   }
 }
 /* responsive*/
