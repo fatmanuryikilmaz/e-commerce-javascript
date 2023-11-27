@@ -120,6 +120,7 @@ header .menu-dropdown-wrapper {
   opacity: 0;
   visibility: hidden;
   z-index: 1;
+  display: none;
 }
 header .menu-dropdown-content {
   width: 220px !important;
