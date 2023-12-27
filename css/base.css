@@ -44,6 +44,14 @@ button {
   cursor: pointer;
   border: none;
 }
+button:disabled {
+  opacity: 0.4;
+  cursor: no-drop;
+}
+button:disabled:hover {
+  opacity: 0.4;
+  cursor: no-drop;
+}
 .btn {
   display: inline-block;
   padding: 0 25px;

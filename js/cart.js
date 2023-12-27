@@ -32,6 +32,7 @@ function removeCartItem() {
   let cartItems = document.querySelector(".header-card-count");
   btnDeleteCart.forEach((button) => {
     button.addEventListener("click", function (e) {
+      e.preventDefault();
       const id = e.target.dataset.id;
       cart = cart.filter((item) => item.id !== Number(id));
       displayCartProduct();
