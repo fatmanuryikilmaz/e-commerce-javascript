@@ -1,5 +1,6 @@
 import headerFunc from "./header.js";
 import productsFunc from "./products.js";
+import searchFunc from "./search.js";
 
 //! add product to lacalStorage start
 //?fetch veri almak için kullanılan yapı
@@ -10,6 +11,7 @@ import productsFunc from "./products.js";
 
   data ? localStorage.setItem("products", JSON.stringify(data)) : [];
   productsFunc();
+  searchFunc(data);
 })(); //?kendi kendine gelen fonksiyon
 //! add product to lacalStorage end
 
