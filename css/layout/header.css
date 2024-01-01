@@ -1,7 +1,11 @@
 /*! header start */
 header {
   border-bottom: 1px solid #dee0ea;
-  position: relative;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 10;
 }
 .global-notification {
   background-color: #1367ef;
@@ -81,10 +85,17 @@ header {
   display: flex;
   column-gap: 16px;
   align-items: center;
+  background-color: transparent;
 }
+
 .header-right .bi-person {
   font-size: 23px;
 }
+.header-right i.active {
+  font-size: 23px;
+  color: #1367ef;
+}
+
 .header-right .search-button {
   border: none;
   background-color: transparent;
@@ -93,6 +104,7 @@ header {
   font-size: 18px;
   display: flex;
   flex-direction: column;
+  background-color: transparent;
 }
 .header-right .header-cart {
   position: relative;

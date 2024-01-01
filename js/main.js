@@ -10,7 +10,7 @@ import searchFunc from "./search.js";
   const data = await photos.json();
 
   data ? localStorage.setItem("products", JSON.stringify(data)) : [];
-  productsFunc();
+  productsFunc(data);
   searchFunc(data);
 })(); //?kendi kendine gelen fonksiyon
 //! add product to lacalStorage end
